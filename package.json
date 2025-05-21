@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://aws-af.github.io/Life-Line",
+  "homepage": "https://AWS-af.github.io/demo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
