@@ -5,11 +5,14 @@ import WhatWeDo from "./components/WhatWeDo";
 import Home from "./components/Home";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
-import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+import { Routes, Route, Router } from "react-router-dom";
 
 export default function App() {
   return (  
-      <Routes>
+      <Router>
+        <ScrollToTop />
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/aboutUs" element={<AboutUs />} />
@@ -17,5 +20,6 @@ export default function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
+      </Router>
   );
 }
