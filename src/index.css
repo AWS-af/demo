@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+html, body, #root {
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+}
+.home {
+  background-image: url(/src/assets/promo_3.jpg);
+  height: 600px;
+  background-attachment: fixed;
+
+}
+.headerLi::after{
+  content: "";
+  margin-left: 20px;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(149, 149, 149);
+  top: 17px;
+  border-radius: 50%;
+  position: absolute;
+
+}
+.headerLi {
+  position: relative; /* space for the line */
+  padding: 10px;
+}
+
+.headerLi::before {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: green;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.headerLi:hover::before {
+  transform: scaleX(1); /* shows the line */
+}
+
+
+.eventsInfo{
+  background-image: url(/src/assets/events1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.274); /* dimming layer */
+  background-blend-mode: multiply; /* or overlay, darken, etc */
+}
+.donation{
+  background-image: url(/src/assets/events.jpg);
+  height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.274); /* dimming layer */
+  background-blend-mode: multiply; /* or overlay, darken, etc */
+}
+.aboutUs{
+  background-image: url(/src/assets/aboutUs.jpg);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(87, 70, 138, 0.409); /* dimming layer */
+  background-blend-mode: multiply; /* or overlay, darken, etc */
+}
+.weDoNow{
+  background-image: url(/src/assets/events.jpg);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(74, 57, 124, 0.527); /* dimming layer */
+  background-blend-mode: multiply; /* or overlay, darken, etc */
+}
+
+.whatWeDo{
+  background-image: url(/src/assets/promo_1.jpg);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(87, 70, 138, 0.409); /* dimming layer */
+  background-blend-mode: multiply; /* or overlay, darken, etc */
+}
+.whatWeDoCard{
+  background-image: url(/src/assets/promo_3.jpg);
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(87, 70, 138, 0.409); /* dimming layer */
+  background-blend-mode: multiply; /* or overlay, darken, etc */
+}
+.events{
+  background-image: url(/src/assets/promo_1.jpg);
+  height: fit-content;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(87, 70, 138, 0.409); /* dimming layer */
+  background-blend-mode: multiply; /* or overlay, darken, etc */
+}
+.gallery{
+  background-image: url(/src/assets/promo_1.jpg);
+  height: fit-content;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(87, 70, 138, 0.409); /* dimming layer */
+  background-blend-mode: multiply; /* or overlay, darken, etc */
+}
+.contacts{
+  background-image: url(/src/assets/events.jpg);
+  height: fit-content;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(87, 70, 138, 0.612); /* dimming layer */
+  background-blend-mode: multiply; /* or overlay, darken, etc */
+}
